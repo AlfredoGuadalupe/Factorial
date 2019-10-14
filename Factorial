@@ -1,0 +1,35 @@
+Fundamentos de programación
+2020-1
+Fecha de entrega: Hoy
+Programa para obtener el factorial
+100 puntos
+
+Adrian Ulises Mercado Martinez
+13 oct.
+Tu trabajo
+Tarea entregada
+
+Factorial.c
+C
+Comentarios privados
+Programa para obtener el factorial
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+long fact(int n);
+int main() {
+	int b;
+	printf("Ingresa un numero\n");
+	scanf("%d",&b);
+	printf("El factorial es %ld\n", fact(b));
+	return 0;
+}
+long fact(int n){
+    if(n==0)
+        return 1;
+    else
+        return fact(n-1)*n;
+}
